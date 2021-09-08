@@ -1,0 +1,241 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+  margin:0;
+  padding:0;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  opacity: 0.9;
+}
+
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem; }
+
+.mobile-nav{   
+
+  padding:15px 15px;
+box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.083);
+-webkit-box-shadow:10px 10px 50px 5px rgba(0, 0, 0, 0.083);
+-moz-box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.083);
+border-radius: 25px;
+  border-color: #1f5472;
+}
+.apply-btn {
+  text-align: center;
+    background: #1f5472;
+    border-radius: 20px;
+    padding: 8px 18px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.apply-btn a {
+      color: #fff!important;
+
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 0 10px 24px;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 20px;
+  color: rgba(53, 53, 53, 0.7);
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+
+@media (min-width: 768px){
+    .navbar-expand-md > .container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+}
+
+#page-header {
+  height: 200px;
+      position: relative;
+
+  background: url('../images/home1.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+  z-index: 1;
+
+}
+#page-header::before {
+   content:'';
+    position: absolute;
+    box-sizing: border-box;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background-color:#0d0f18c2;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/*--------------------------------------------------------------
+# Icon Boxes
+--------------------------------------------------------------*/
+.icon-boxes {
+  padding-top: 0;
+  position: relative;
+}
+
+.icon-boxes .icon-box {
+  padding: 40px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.icon-boxes .icon {
+  margin: 0 auto 20px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.icon-boxes .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #247ff6;
+}
+
+.icon-boxes .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.icon-boxes .title a {
+  color: #05579e;
+}
+
+.icon-boxes .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #777777;
+}
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.services{
+  background: #f1f1f1;
+  text-align: center;
+}
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #ddd;
+}
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+
+
+footer{
+background-image:url("../images/map-image.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+footer::before{
+    content:'';
+    position: absolute;
+    box-sizing: border-box;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background-color:#0d0f18fa;
+    opacity: 0.8;
+    z-index: -1;
+}
